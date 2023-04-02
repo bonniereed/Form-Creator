@@ -1,0 +1,19 @@
+{
+  "name": "form-creator",
+  "version": "1.0.0",
+  "description": "this app will let a user create custom forms based on their input and export to their choice of file type",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonniereed/Form-Creator.git"
+  },
+  "author": "Bonnie reed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonniereed/Form-Creator/issues"
+  },
+  "homepage": "https://github.com/bonniereed/Form-Creator#readme"
+}
