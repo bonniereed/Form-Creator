@@ -1,22 +1,20 @@
-let title = document.querySelector("input-options-container");
-let dropdown = document.querySelector("selector-container");
-const save = document.querySelector("save-container");
+document.getElementById("generate").onclick = function () {
+    var options = ["checkbox", "select one", "text"];
 
-const selectInput = ["radio", "checkbox", "text"];
+    var select = document.createElement("select");
+    select.name = "option";
+    select.id = "option";
 
-selectInput.forEach((selectInput) => {
-    const optionEl = document.createElement("option");
-    optionEl.textContent = selectInput;
-    optionEl.setAttribute("id", "value", selectInput);
-    optionEl.addEventListener("click", () => handleClick(selectInput));
-    dropdown.append(optionEl);
-});
+    for (const val of options) {
+        var option = document.createElement("option");
+        option.value = val;
+        option.text = val.charAt(0).toUpperCase() + val.slice(1);
+        select.appendChild(option);
+    }
 
-// function createSelector() {
-//     selectInput.forEach((option) => {
-//         const inputEl = document.createElement("option");
-//         let optionText = option++;
-//         inputEl.setAttribute("id");
-//         dropdown.append(inputEl);
-//     });
-// }
+    var h3 = document.createElement("h3");
+    h3.innerHTML = "Select your input type: ";
+    h3.htmlFor = "option";
+
+    document.getElementById("container").appendChild(h3).appendChild(select);
+};
