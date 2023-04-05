@@ -4,8 +4,19 @@ const save = document.querySelector("save-container");
 
 const selectInput = ["radio", "checkbox", "text"];
 
-selectInput.forEach((selector, options) => {
-    const inputEl = document.createElement("div");
-    inputEl.setAttribute("id", "options-", selector);
-    dropdown.append(inputEl);
+selectInput.forEach((selectInput) => {
+    const optionEl = document.createElement("option");
+    optionEl.textContent = selectInput;
+    optionEl.setAttribute("id", "value", selectInput);
+    optionEl.addEventListener("click", () => handleClick(selectInput));
+    dropdown.append(optionEl);
 });
+
+// function createSelector() {
+//     selectInput.forEach((option) => {
+//         const inputEl = document.createElement("option");
+//         let optionText = option++;
+//         inputEl.setAttribute("id");
+//         dropdown.append(inputEl);
+//     });
+// }
