@@ -10,11 +10,15 @@
     </head>
     <body>
         <div class="input-options-container"></div>
-            <div id="container"></div>
-            <button id="generate">add</button>
-            <select id="mySelectDropdown"></select>
+        <div class="field" id="container">
+        <form action="" method="post" autocomplete="off">
+            <input id="generate" type="text" name="title" id="generate">
+            <span onclick=""addTextEl(this)></span>
+            <span onclick=""minusTextEl(this)></span>
+            <span></span>
             <div class="save-container"></div>
         </div>
+        </form>
         <script src="script.js" async defer></script>
     </body>
 </html>
