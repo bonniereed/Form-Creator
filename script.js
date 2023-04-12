@@ -7,11 +7,11 @@ function addTextEl(el) {
     }
 
     let div = document.createElement("div");
-    div.setAttribute("class", "field");
+    div.setAttribute("class", "entry");
 
-    let field = document.createElement("input");
-    field.setAttribute("type", "text");
-    field.setAttribute("name", "notes[]");
+    let entry = document.createElement("input");
+    entry.setAttribute("type", "text");
+    entry.setAttribute("name", "notes[]");
     let add = document.createElement("span");
     add.setAttribute("onclick", "addTextEl(this)");
     let addText = document.createTextNode("+");
@@ -23,7 +23,7 @@ function addTextEl(el) {
     minus.appendChild(minusText);
 
     form.insert(div, showButton);
-    div.appendChild(field);
+    div.appendChild(entry);
     div.appendChild(add);
     div.appendChild(minus);
 
